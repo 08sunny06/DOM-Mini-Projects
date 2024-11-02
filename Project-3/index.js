@@ -10,7 +10,7 @@ document.querySelector('.buttons').addEventListener('click',e => {
                     i--
                 }
             }
-        }
+        } 
         if(e.target.className=='fa-solid fa-angles-right btns'){
             for(let i=0; i<rgtlang.children.length; i++){                    
                 lftlang.appendChild(rgtlang.children[i])
