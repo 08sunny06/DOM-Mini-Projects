@@ -8,14 +8,14 @@ document.querySelector('.buttons').addEventListener('click',e => {
             for(let i=0; i<rgtlang.children.length; i++){
                 if(rgtlang.children[i].children[0].checked){
                     rgtlang.children[i].children[0].checked = false
-                    lftlang.append(rgtlang.children[i])
+                    lftlang.appendChild(rgtlang.children[i])
                     i--
                 }
             }
         }
         if(e.target.className=='fa-solid fa-angles-right btns'){
             for(let i=0; i<rgtlang.children.length; i++){                    
-                lftlang.append(rgtlang.children[i])
+                lftlang.appendChild(rgtlang.children[i])
                 i--                
             }
         }
@@ -25,14 +25,14 @@ document.querySelector('.buttons').addEventListener('click',e => {
             for(let i=0; i<lftlang.children.length; i++){
                 if(lftlang.children[i].children[0].checked){
                     lftlang.children[i].children[0].checked = false
-                    rgtlang.append(lftlang.children[i])
+                    rgtlang.appendChild(lftlang.children[i])
                     i--
                 }
             }
         }
         if(e.target.className=='fa-solid fa-angles-left btns'){
             for(let i=0; i<lftlang.children.length; i++){
-                rgtlang.append(lftlang.children[i])
+                rgtlang.appendChild(lftlang.children[i])
                 i--
                 
             }
