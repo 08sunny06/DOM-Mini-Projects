@@ -1,5 +1,3 @@
-let proglang = document.getElementsByClassName('grp-1')[0]
-
 document.querySelector('.buttons').addEventListener('click',e => {
     let rgtlang = document.getElementsByClassName('grp-1')[0]
     let lftlang = document.getElementsByClassName('grp-2')[0]
@@ -34,7 +32,7 @@ document.querySelector('.buttons').addEventListener('click',e => {
             for(let i=0; i<lftlang.children.length; i++){
                 rgtlang.appendChild(lftlang.children[i])
                 i--
-                
+
             }
         }
     }    
